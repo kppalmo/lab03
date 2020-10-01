@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Keegan's Classic Car's</title>
+    </head>
+    <body>
+     <div> <b><a href="{{ url_for("index") }}" > Main : </a></b>
+              <a href="{{ url_for("cars") }}" > Cars : </a>
+              <a href="{{ url_for("newcar") }}" > Create Cars : </a>
+
+     </div>
+
+    {%  block content %}
+    {% endblock %}
+    </body>
+</html>

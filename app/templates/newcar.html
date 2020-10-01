@@ -1,0 +1,30 @@
+   {% extends "base.html" %}
+
+   {% block content %}
+
+
+<h2>Create a New Artist</h2>
+   <form action="" method="post" novalidate>
+        <input id="csrf_token" name="csrf_token" type="hidden" value="IjllYTdhNmI0MTVmYWFlOTUxYmRlMmZmOTJkZDIyYWRjNThjYzVmOTgi.Elfw5w.xegrVmCZP_HT3ILB7RaXapLJ0sg">
+        <p>
+            <label for="name">Artist Name</label><br>
+            <input id="name" name="name" required size="32" type="text" value=""><br>
+
+        </p>
+
+        <p>
+            <label for="hometown">Hometown</label><br>
+            <input id="hometown" name="hometown" size="32" type="text" value=""><br>
+
+        </p>
+
+        <p>
+            <label for="description">Description</label><br>
+            <textarea cols="128" id="description" name="description" rows="20"></textarea><br>
+
+        </p>
+
+        <p><input id="submit" name="submit" type="submit" value="Create New Artist"></p>
+    </form>
+
+   {%  endblock %}

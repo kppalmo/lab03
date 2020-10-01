@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h1>List of Cars</h1>
+
+
+    <body>
+    <ul>
+    {% for car_list in car_list %}
+    <div><p><a href="{{ url_for("carinfo") }}" > {{ car_list }} : </a> </p></div>
+    {% endfor %}
+    </ul>
+
+    </body>
+
+
+
+{%  endblock %}

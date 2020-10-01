@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h2>{{ info["name"] }}</h2>
+<h3>{{ info["make"] }}</h3>
+<p>{{ info["description"] }}</p>
+
+{% if info ["events"] is defined and info ["events"]|length >0 %}
+<h3>Events</h3>
+    <ul>
+        {% for event in info["events"] %}
+            <li>{{ event }}</li>
+    {%  endfor %}
+
+    </ul>
+    {%  endif %}
+
+{%  endblock %}
